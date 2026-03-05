@@ -1,0 +1,256 @@
+/* Checkout Header */
+.cwcc-checkout-header {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.cwcc-step-indicators {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cwcc-step-indicator {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    font-size: 14px; /* Adjust font size */
+    color: #999; /* Inactive indicator color */
+}
+
+.cwcc-step-indicator.active {
+    color: #007bff; /* Active indicator color */
+}
+
+.cwcc-step-indicator::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc; /* Inactive indicator dot color */
+    border-radius: 50%;
+    margin: 0 auto 5px;
+}
+
+.cwcc-step-indicator.active::before {
+    background-color: #007bff; /* Active indicator dot color */
+}
+
+.cwcc-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cwcc-form-group {
+    margin-bottom: 20px;
+}
+
+.cwcc-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.cwcc-form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.cwcc-next, .cwcc-prev, #place_order {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #007cba;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cwcc-prev {
+    background-color: #555;
+}
+
+/* Style for back to cart button */
+.cwcc-back-to-cart {
+    text-align: right;
+    margin-bottom: 50px; /* Adjust margin as needed */
+}
+
+.cwcc-back-to-cart-btn {
+    background-color: #007bff; /* Example color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cwcc-back-to-cart-btn:hover {
+    background-color: #0056b3; /* Darker shade of the primary color */
+}
+
+.cwcc-step {
+    display: none;
+    margin-top: 20px;
+}
+
+.cwcc-step.active {
+    display: block;
+}
+
+.cwcc-form-row {
+    display: flex;
+    gap: 20px; /* Space between columns */
+    margin-bottom: 20px;
+}
+
+.cwcc-form-group {
+    flex: 1;
+    min-width: 300px; /* Minimum width for form group to handle small screens */
+}
+
+.cwcc-form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.cwcc-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.cwcc-next, .cwcc-prev, #place_order {
+    margin-left: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #0071a1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cwcc-next:hover, .cwcc-prev:hover, #place_order:hover {
+    background-color: #005f8a;
+}
+
+/* Step 3: Order Summary */
+.cwcc-step.cwcc-order-summary-step {
+    display: none;
+    padding: 20px;
+}
+
+.cwcc-order-summary-step h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.cwcc-order-summary-step .cwcc-form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.cwcc-order-summary-step .cwcc-form p {
+    margin-bottom: 10px;
+}
+
+.cwcc-order-summary-step .cwcc-coupon-link {
+    margin-top: 20px;
+}
+
+.cwcc-order-summary-step #cwcc-coupon-form {
+    margin-top: 10px;
+}
+
+.cwcc-order-summary-step #cwcc-coupon-form input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cwcc-order-summary-step #cwcc-coupon-form button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Step 4: Payment */
+.cwcc-step.cwcc-payment-step {
+    display: none;
+    padding: 20px;
+}
+
+.cwcc-payment-step h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.cwcc-payment-step .cwcc-form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    list-style: none;
+    font-size: 15px;
+}
+
+.blockUI.blockOverlay {
+    background: none !important;
+}
+
+.cwcc-payment-step .wc_payment_methods {
+    margin-bottom: 20px;
+}
+
+.cwcc-payment-step .wc_payment_methods label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cwcc-payment-step .wc_payment_methods input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.cwcc-payment-step .button.alt {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Buttons common across all steps */
+.cwcc-next, .cwcc-prev, .cwcc-back-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.cwcc-prev {
+    background-color: #ccc;
+}
